@@ -1,11 +1,11 @@
 {
-  "name": "coding-dojo",
-  "repository": "https://github.com/actano/coding-dojo",
+  "name": "pg-test",
+  "repository": "https://github.com/actano/pg-Testing",
   "version": "0.0.0",
-  "description": "Coding Dojo",
+  "description": "Coffee-script testing of RPLAN PG",
   "scripts": {
-    "test": "mocha -R spec --compilers coffee:coffee-script/register **/*-test.coffee",
-    "coverage": "coffeeCoverage ./lib ./coverage && mocha -R spec --require coffee-coverage/register --reporter html-cov coverage/**/*-test.js > coverage/coverage.html && open coverage/coverage.html"
+    "test": "mocha -R spec --compilers coffee:coffee-script/register test/**/*.coffee",
+    "coverage": "coffeeCoverage ./lib ./coverage && mocha -R spec --require coffee-coverage/register --reporter html-cov coverage/**/*.js > coverage/coverage.html && open coverage/coverage.html"
   },
   "author": "",
   "dependencies": {
@@ -14,5 +14,6 @@
     "coffee-script": "^1.7.1",
     "mocha": "^1.20.1",
     "commander": "^2.6.0"
-  }
+  },
+  "license": "All rights reserved"
 }
